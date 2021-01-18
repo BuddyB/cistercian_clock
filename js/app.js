@@ -98,7 +98,7 @@ function draw() {
     drawNumber(ctx, num, 'green');
     
     title = document.getElementById('time')
-    title.title = num
+    title.title = String(num).padStart(4, '0')
 }
 
 function startTime() {
